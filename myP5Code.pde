@@ -11,7 +11,11 @@ setup = function() {
     fill(0, 255 - i, 0);
     text("⸙", 420-i, 390);
   }  
-
+var animals = [ "dogs", "fish", "leopards", "lion", "vulture"];
+for(var animalNum = 0; animalNum < animals.length; animalNum++){
+  fill(random(255), random(255), random(255));
+  text(animals[animalNum], 10, 70+animalNum*70);
+}
   
 };
 
